@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>TODO App</h1>
+    <main>
+        <div class="left">
+            <form id="form">
+                <span>Write your post here</span><br> <br>
+                <textarea name="post" id="input" cols="30" rows="10"></textarea> <br> <br>
+                <div id="msg"></div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <div class="right">
+            <b>Your tasks here</b>
+            <div id="posts">
+                <p></p>
+                <span class="options">
+                    <i onclick="editpost(this)" ml-2rem ></i>
+                    <i onclick="deletepost(this)" ></i>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>
